@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/ícono página.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"crossorigin="anonymous">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+    <script defer src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>    
+<title>Digital Monsters</title>
+
+</head>
+
+<!-- Aquí va el Navbar-->  
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-danger container-fluid" id="navbar">
+    <div class="d-inline-block">
+          <a class="navbar-brand" id="marca"></a>
+        <img src="assets/img/navbar brand.png" width="30%"></a>
+    </div>
+    <ul class="nav nav-pills">
+    <li class="nav-item">
+    <a class="nav-link active" href="https://digimon-api.vercel.app/api/digimon">Visita la Digimon API</a>
+    </li>
+    </ul>  
+
+    <div>
+        <select name="digimon" id="digimon">
+        </select>
+    </div>
+</nav>    
+
+<!-- Aqui van las citas en la página -->  
+
+
+<div class="container">
+<div class="abs-center">    
+        <div class="card group border-0">
+            <div class="mt-5 mt-sm-5 mt-lg-5 mt-md-5 mt-xl-5 mt-xxl-5 mx-10 border-0">
+            <img src="assets/img/joe kido.png" class="h-50 p-2" id="joekido" class="card-img-top" alt="Joe Kido">
+        <div class="card-body mx-5 card-text dark-bg-info" style="width:10rem justify-self fit-content">
+        <p id="presionamifoto"> Presiona mi <b>foto</b> para saber más de mí.</p>  
+        </div>   
+            <blockquote class="blockquote">
+            <p>Cada quien debe encontrar su propio camino.</p>
+            <footer class="blockquote-footer"><cite title="Título de la fuente">Joe Kido</cite>
+            </footer>
+            </blockquote>
+        </div>  
+
+
+
+    <div class= "mt-5 mt-sm-5 mt-lg-5 mt-md-5 mt-xl-5 mt-xxl-5 mx-10 border-0">
+      <img src="assets/img/Myotismon.png" class="h-50 p-2" id="myotismon" class="card-img-top" alt="Myotismon">
+    <div class="card-body mx-5 card-text dark-bg-info" style="width:10rem justify-self fit-content">
+        <p id="presionamifoto"> Presiona mi <b>foto</b> para saber más de mí.</p> 
+    </div>  
+          <blockquote class="blockquote">
+          <p>Sueños fugaces solo muestran a un verdadero tonto.</p>
+          <footer class="blockquote-footer"><cite title="Título de la fuente">Myotismon</cite>
+          </footer>
+        </blockquote>
+    </div>  
+
+
+
+    <div class="mt-5 mt-sm-5 mt-lg-5 mt-md-5 mt-xl-5 mt-xxl-5 mx-10 border-0">
+        <img src="assets/img/Sora Takenouchi.png" class="h-50 p-2 mx-5" id="sora" class="card-img-top" alt="Sora Takenouchi"> 
+      <div class="card-body mx-5 card-text dark-bg-info" style="width:10rem justify-self fit-content">
+        <p id="presionamifoto"> Presiona mi <b>foto</b> para saber más de mí.</p> 
+      </div>  
+        <blockquote class="blockquote">
+        <p>¡Si no cambiamos nada por nosotros mismos, nada más lo hará!</p>
+        <footer class="blockquote-footer"><cite title="Título de la fuente">Sora Takenouchi</cite></footer>
+        </blockquote>   
+    </div>          
+</div>
+</div>
+
+<!-- Aquí va el modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+    <h1 class="modal-title fs-5" id="nombreDigimon">Modal title</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<div class="modal-body">
+<div class="d-flex justify-content-center">
+    <img src="" alt="">
+</div>
+<div>
+    <p class="text-center">Nivel <span id="nivelDigimon"></span></p>
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+#navbar {
+    display: inline-block;
+}
+
+#marca {
+    display: inline-block;
+}
+
+.nav-item {
+    margin-top: 1%;
+}
+
+#digimon {
+    margin-top: 1%;
+}
+
+
+#presionamifoto {
+    font-weight: 600;
+
+}
+
+
+#citas {
+    font-size: xx-large;
+    font-style: italic;
+    justify-content: center;
+}
+
+#selecciondigimon {
+    margin-top: 1%;
+    margin-left: 0%;
+
+}
+
+#tabladigimon {
+    margin-top: 10%;
+   
+}
